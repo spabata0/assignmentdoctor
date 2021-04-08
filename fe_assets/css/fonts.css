@@ -1,0 +1,151 @@
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../fonts/Poppins-Light.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("../fonts/Poppins-Black.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../fonts/Poppins-Medium.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("../fonts/Poppins-Thin.otf");
+}
+
+.text-reg {
+    font-family:"Poppins-Regular";
+}
+
+.text-blk {
+    font-family:"Poppins-Black";
+}
+
+.text-thn {
+    font-family:"Poppins-Thin";
+}
+
+.text-bld {
+    font-family:"Poppins-Bold";
+}
+
+.text-itl {
+    font-family:"Poppins-Italics";
+}
+
+.text-mdm {
+    font-family:"Poppins-Medium";
+}
+
+.w200{
+    font-weight : 200;
+}
+.w400{
+       font-weight : 400;
+}
+.w600{
+       font-weight : 600;
+}
+.w800{
+    font-weight : 800;
+}
+
+.xs {
+    font-size: 6pt;
+}
+
+.sm {
+    font-size : 9pt;
+}
+
+.ss {
+    font-size : 10pt;
+}
+
+.rg {
+    font-size: 12pt;
+}
+
+.rd {
+    font-size: 14pt;
+}
+
+
+.md {
+    font-size: 16pt;
+}
+
+.ml {
+    font-size: 20pt;
+}
+
+.lg {
+    font-size: 28pt;
+}
+
+.xl {
+    font-size: 32pt;
+}
+
+.xx {
+    font-size: 34pt;
+}
+
+.orange{
+    color: #F9722E;
+}
+
+.gray{
+    color:#cecece;
+}
+
+.dgray{
+    color:#5d5d5d;
+}
+
+.lgray{
+    color:#e5e5e5;
+}
+
+.white{
+    color:#fff;
+
+}
+
+.dblue {
+    color:#54A9DD;
+}
+
+.blue{
+    color: #2F71B4;
+}
+
+.red{
+    color: red;
+}
+
+.strike {
+    text-decoration:line-through;
+};
+
+.italics {};
+
+
+
+

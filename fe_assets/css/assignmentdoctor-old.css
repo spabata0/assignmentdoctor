@@ -1,0 +1,869 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+ /* background: linear-gradient(70deg, #e6e6e6, #f7f7f7);*/
+  /*color: #514B64;*/
+  min-height: 100vh;
+  font-family: "Poppins-Regular";
+  color: #5D5D5D;
+  overflow-y: scroll;
+overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Italics";
+  src: url("../fonts/Poppins-Italics.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../fonts/Poppins-Light.otf");
+}
+
+@font-face {
+  font-family: "Poppins-LightItalics";
+  src: url("../fonts/Poppins-LightItalics.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("../fonts/Poppins-Black.otf");
+}
+
+@font-face {
+  font-family: "Poppins-BlackItalics";
+  src: url("../fonts/Poppins-BlackItalics.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.otf");
+}
+
+@font-face {
+  font-family: "Poppins-BoldItalics";
+  src: url("../fonts/Poppins-BoldItalics.otf");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("../fonts/Poppins-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraBoldItalics";
+  src: url("../fonts/Poppins-ExtraBoldItalics.otf");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url("../fonts/Poppins-ExtraLight.otf");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraLightItalics";
+  src: url("../fonts/Poppins-ExtraLightItalics.otf");
+}
+
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../fonts/Poppins-Medium.otf");
+}
+
+@font-face {
+  font-family: "Poppins-MediumItalics";
+  src: url("../fonts/Poppins-MediumItalic.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("../fonts/Poppins-Thin.otf");
+}
+
+@font-face {
+  font-family: "Poppins-ThinItalics";
+  src: url("../fonts/Poppins-ThinItalic.otf");
+}
+/*=====*/
+
+#navbar {
+  position:relative;
+  overflow: hidden;
+  padding: 50px 20px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: -20px;
+  bottom:20px;
+  z-index: 99;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 45% 45% 45%;
+  grid-template-rows: 25% 25% 25%;
+  grid-gap: 5px;
+  //background-color: #2196F3;
+  padding: 00px;
+}
+
+.grid-container > div {
+  //background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px 0;
+}
+
+.grid-container2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 45% 45% 45% 45%;
+  grid-gap: 20px;
+  top: 0;
+  //background-color: #2196F3;
+}
+
+.grid-container2 > div {
+  position: relative;
+  text-align: center;
+  top: -25px;
+  left: 30%;
+  padding: 50px 0;
+}
+
+
+.grid-container3 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 15% 25% 28% 15%;
+  grid-gap: 5px;
+  margin-top: -10px;
+
+}
+
+.grid-container3 > div {
+  position: relative;
+  text-align: center;
+  top: 25px;
+  margin-left: 55%;
+  padding: 0 0;
+}
+    /*
+      Rollover Image
+     */
+.figure {
+      position: relative;
+      width: 360px; /* can be omitted for a regular non-lazy image */
+      max-width: 100%;
+  }
+  .figure img.image-hover {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+  .figure:hover img.image-hover {
+    opacity: 1;
+  }
+
+  .lead {
+    font-family: "Poppins-Light";
+    font-weight: 400;
+    font-size: 10pt;
+  }
+
+  .white-text {
+    font-family: "Poppins-Regular";
+    font-weight: 600;
+    font-size: 16pt;
+    color: #fff;
+  }
+
+  
+  .white-text-tiny {
+    font-family: "Poppins-Thin";
+    font-weight: 600;
+    font-size: 9pt;
+    color: #fff;
+  }
+
+  .gray-text-tiny {
+    font-family: "Poppins-Thin";
+    font-weight: 600;
+    font-size: 9pt;
+    color: #5d5d5d;
+  }
+
+  .orange-text {
+    font-family: "Poppins-Regular";
+    font-weight: 600;
+    font-size: 16pt;
+    color:#F9722E;
+  }
+
+  .white-text-thin {
+    font-family: "Poppins-Thin";
+    font-weight: 600;
+    font-size: 16pt;
+    color: #fff;
+  }
+
+  .white-text-bold-small {
+    font-family: "Poppins-Bold";
+    font-size: 20pt;
+    color: #fff;
+  }
+
+
+
+  .white-text-medium {
+    font-family: "Poppins-Regular";
+    font-weight: 100;
+    font-size: 18pt;
+    color: #fff;
+  }
+
+  .white-text-large {
+    font-family: "Poppins-Regular";
+    font-weight: 600;
+    font-size: 32pt;
+    color: #fff;
+  }
+
+  .white-text-bold-med {
+    font-family: "Poppins-Bold";
+    font-size: 18pt;
+    color: #fff;
+  }
+
+  .white-text-large {
+    font-family: "Poppins-Thin";
+    font-weight: 600;
+    font-size: 26pt;
+    color: #fff;
+  }
+
+  .white-text-bold {
+    font-family: "Poppins-Bold";
+    font-weight: 600;
+    font-size: 40pt;
+    color: #fff;
+  }
+
+  .white-text-regular {
+    font-family: "Poppins-Regular";
+    font-weight: 600;
+    font-size: 28pt;
+    color: #fff;
+  }
+
+  .gray-text-large {
+    font-family: "Poppins-Regular";
+    font-weight: 600;
+    font-size: 32pt;
+    color: #5d5d5d;
+  }
+
+  .blue-text-large {
+    font-family: "Poppins-Regular";
+    font-weight: 600;
+    font-size: 32pt;
+    color: #2F71B4;
+  }
+
+  .orange-text-large {
+    font-family: "Poppins-Regular";
+    font-weight: 600;
+    font-size: 32pt;
+    color: #F9722E;
+  }
+  
+  .normal-text {
+    font-family: "Poppins-Regular";
+    font-weight: 400;
+    font-size: 18pt;
+    color: #5d5d5d;
+  }
+
+  .white-normal-text {
+    font-family: "Poppins-Regular";
+    font-weight: 400;
+    font-size: 14pt;
+    color:#fff;
+  }
+
+  #sticky-text-1 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10%;
+  }
+
+  #sticky-text-2 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: -5%;
+  }
+
+  #sticky-button {
+    position: relative;
+    margin-top: -7px;
+  }
+
+  .bold-text-large {
+    font-family: "Poppins-Bold";
+    font-size: 32pt;
+  }
+  
+  
+  .bold-text-orange-large {
+    font-family: "Poppins-Bold";
+    font-size: 32pt;
+    color: #F9722E;
+  }
+  
+  
+  .normal-text-large {
+    font-family: "Poppins-Regular";
+    font-size: 32pt;
+  }
+  
+
+  .normal-text-orange-large {
+    font-family: "Poppins-Regular";
+    font-size: 32pt;
+    color: #F9722E;
+  }
+
+.navbar-new-top{
+  background-image: url('../../images/topheader-bg.png');
+  color: #E5E5E5;
+  font-size: 16px;v
+  font-weight: 600;
+}
+.navbar-brand{
+  font-weight: 600;
+}
+.navbar-brand img{
+  width: 100%;
+  margin-left: 65%;
+  margin-top: 20%;
+}
+.navbar-new-top ul{
+  margin-right: 50%;
+}
+.navbar-new-top ul li{
+  margin-right: 8%;
+}
+.navbar-new-bottom{
+  margin-top: 2%;
+  height: 100px;
+}
+.navbar-new-bottom ul li{
+  
+  margin-top: 10%;
+}
+
+.navbar-nav .nav-item a {
+  color: #E5E5E5;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 1s ease;
+  width: 130px;
+  padding-top: 20px;
+}
+
+.navbar-nav .nav-item a:hover{
+  color: #0062cc;
+}
+.dropdown-menu.show{
+  background: #f8f9fa;
+  border-radius: 0;
+}
+.header-btn{
+  width: 161%;
+  border: none;
+  border-radius: 1rem;
+  padding: 8%;
+  background: #0062cc;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.custom-select {
+  border:0 solid #cecece;
+  background: #ffffff url('../../images/dropdown-arrow.png') no-repeat top right;
+  width: 420px;
+  font-size: 10px;
+  height: 25px;
+  padding-left: 0;
+  padding-top: 5px;
+  margin-left:-20%;  
+  margin-top:15px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.custom-select-small {
+  border:0 solid #cecece;
+  background: #ffffff url('../../images/dropdown-arrow.png') no-repeat top right;
+  width: 140px;
+  font-size: 10px;
+  height: 25px;
+  padding-left: 0;
+  padding-top: 4px;
+  margin-left:-35%;  
+  margin-top:15px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#minus-button {
+  background-image: url('../../images/minusbtn.png');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 30% 30%;
+  /* put the height and width of your image here */
+  height: 30px;
+  width: 40px;
+  border: none;
+}
+
+#plus-button {
+  background-image: url('../../images/addbtn.png');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 30% 30%;
+  /* put the height and width of your image here */
+  height: 30px;
+  width: 40px;
+  border: none;
+}
+
+button span {
+  display: none;
+}
+
+.amttitle : {
+  margin-left: 1%;
+}
+
+.amtfig : {
+  margin-left: 20%;
+}
+
+#proceedorder {
+  margin-top: 25px;
+  margin-left: 25%;
+}
+
+#price  {
+  margin-top:100px;
+  width:80px;
+  margin-left: -80%;
+}
+#pagetxt {
+  width: 90px;
+}
+
+.move-left {
+  margin-left:42%;
+  width: 400px;
+}
+
+#movepagenumber {
+  margin-left: 70px;
+
+}
+
+#nav-bar-links {
+  margin-left: 20%;
+}
+
+#nav-bar2 {
+  margin-left: 40%;
+}
+
+#order-btn {
+  background-image: url('../../images/ordernow-btn.png');
+  width: 180px;
+  height:80px;
+  postiion: relative;
+  text-align: center;
+}
+
+#signin-btn {
+  background-image: url('../../images/signin-btn.png');
+  width: 180px;
+  height:80px;
+  postiion: relative;
+  text-align: center;
+}
+
+
+#top-bar {
+  background-image: url('../../images/topheader-bg.png');
+  height: 50px;
+  width: 100%;
+  position: fixed;
+}
+
+
+  #contact-numbers {
+    background-image: url('../../images/topheader-bg.png');
+    width:100%;
+    height: 30px;
+    align-content: center;
+  }
+
+  #order-placeholder {
+    background-image: url('../../images/ordernow.png');
+  }
+
+  #main-content {
+      background-image: url('../../images/background-img.png');
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: 1000px, 300px;
+      padding-top: 0;
+      height: 750px;
+  }
+
+  #main-content-inner {
+
+    height: 100px;
+}
+
+#contact-no {
+   
+     margin-left:30%;
+}
+
+#calculator-header {
+  margin-top:15px;
+  margin-left:-35px;
+  height: 25px;
+  width: 100%;
+  font-weight:bolder;
+}
+
+#price-section {
+  margin-top:7%;
+}
+
+#total {
+  margin-top:25px;
+}
+
+.price-placeholder {
+  display: flex;
+  margin-left:5%;
+  height: 23px;
+  width: 500px;
+}
+
+.select-placeholder {
+  background-image: url("../../images/dropdown-bg.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  margin-left:5%;
+  margin-top: 10px;
+  height: 43px;
+  width: 598px;
+}
+
+.select-placeholder-small {
+  background-image: url("../../images/daysbg.png");
+  background-size: 63%;
+  background-repeat: no-repeat;
+  margin-left:5%;
+  margin-top: 10px;
+  height: 45px;
+  width: 298px;
+}
+ 
+#security-bar-placeholder {
+    background-image: url('../../images/securitygrade-bg.png');
+    position:relative;
+    margin-top: 21%;
+    background-size:600px,100px;
+    background-repeat: no-repeat;
+    height:490px;
+    padding-left: 6%;
+    left: -5%;
+    display:inline-flex;
+}
+
+.outline {
+  background-image: url("../../images/TextOutline.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  height:35px;
+  margin-left:5%;
+  margin-top: 5px;
+}
+
+.moveit {
+  position:relative;
+  top: 8px;
+  margin-left: -30px;
+  margin-top: 40px;
+}
+
+#snc-placeholder {
+  margin-top: -25px;
+}
+
+#cost-calculator-placeholder {
+   display:inline-block;
+    background-image: url('../../images/calculate-bg.png');
+    position: relative;
+    margin-top: 14%;
+    margin-left: 50%;
+    background-size:550px,100px;
+    background-repeat: no-repeat;
+    height:500px;
+    left:80px;
+    display: inline-flex;
+
+}
+
+#marketing-container-1 {
+  background-image: url('../../images/BackgroundShape.png');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: right -4px ;
+ 
+  height: 1201px;
+  width:100%;
+  margin-top: -70px;
+  
+}
+
+#marketing-content-1 {
+  background-image: url('../../images/bgshape.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width:100%;
+  margin-top: -90px;
+}
+
+#marketing-content-2 {
+  background-image: url('../../images/Slide\ 03\ BG.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+ 
+  height: 280px;
+  width:100%;
+  margin-top: -120px;
+  margin-left: auto;
+  margin-right:auto
+}
+
+#marketing-content-3 {
+  background-image: url('../../images/rectangle80.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+ 
+  height: 84px;
+  width:1793;
+  margin-top: -60px;
+  margin-left: auto;
+  margin-right:auto
+}
+
+#marketing-content-4 { 
+  height: 84px;
+  width:100%;
+  margin-top: 22%;
+  text-align: center;
+}
+
+#marketing-content-5 {}
+
+#marketing-content-6 {
+
+  background-image: url('../../images/OurStatsBG.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 288px;
+}
+
+#marketing-content-7 {
+  height: 300px;
+  margin-bottom: 10%;
+}
+
+#marketing-content-8 {
+  background-image: url('../../images/EmailBG.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 320px;
+  margin-top:35%;
+}
+
+
+#marketing-content-9 {
+  height: 520px;
+}
+
+#marketing-content-10 {
+  height: 520px;
+  background-color: #fff;
+}
+
+
+#stats-header {
+  position: relative;
+  margin-top: 10px;
+}
+
+#mc-1-inner {
+  position: relative;
+  margin-left: 10%;
+  margin-top: 20%;
+}
+
+#mc-2-inner {
+  margin-top: 20%;
+}
+
+#stepsimg {
+  position: relative;
+  margin-top: 5%
+}
+
+
+#emailmsg1 {
+  position: relative;
+  margin-top:3%;
+}
+
+#email-placeholder {
+  background-image: url('../../images/EmailTextFeild.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height:"774px";
+  border: #777;
+}
+
+#email-button-placeholder {
+  margin-top:50px;
+}
+
+#features-message {
+  margin-top:10%;
+}
+
+#security-badge-msg {
+  position: relative;
+  margin-top:25px;
+  margin-left:35px;
+}
+
+#snc-msg {
+  position: relative;
+  margin-top: 30px;
+}
+
+#security-badges {
+  
+}
+
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+    background-color: #777;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }

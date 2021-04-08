@@ -1,0 +1,234 @@
+.searchbox{
+    
+    margin: 0 !important;
+    padding:0 !important;
+    height:100% !important;
+    font-size: 11pt !important;;
+    font-weight: 100 !important;;
+    line-height: 1px !important;;
+    color: #b5c6d6;
+    background-color: transparent;
+    transition: 0.3s;
+    
+  }
+ 
+
+::placeholder { /* Most modern browsers support this now. */
+   color:     #b5c6d6 !important;
+   font-weight:600;
+}
+  .goog-logo-link {
+      display:none !important;
+  } 
+  .goog-te-gadget .goog-te-combo{
+    border:0;
+    color: #b5c6d6;
+    display: inline-block;
+    line-height: 1px;
+    transition: 0.3s;
+    top:0 !important;
+    margin: 0 !important;
+    background:transparent;
+    
+
+  }
+
+  .goog-te-combo, .goog-te-banner *, .goog-te-ftab *, .goog-te-menu *, .goog-te-menu2 *, .goog-te-balloon * {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+    font-size: 11pt !important;
+  }
+  .goog-te-gadget{
+      color: transparent !important;
+      font-size:0 !important;
+  }
+  
+  .social-links li{
+    list-style-type: none;
+  }
+  
+  .full-menu{
+    z-index: 9999;
+    position: absolute;
+    background-color: #539ccc;
+    opacity: 50%;
+  }
+
+  .goog-te-banner-frame.skiptranslate {
+      display: none !important;
+  } 
+  body {
+      top: 0px !important; 
+  }
+  .dropdown-menu-wrapper {
+    /* transform: translateX(5px); */
+    position: absolute;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    display:none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .dropdown-active{
+    display:block;
+  }
+  .dropdown-menu-wrapper {
+    
+    background: rgba(50, 59, 165, .5);
+
+  }
+  .mega-menu{
+    padding-left: 20%;
+    padding-right: 20%;
+    color:#fff;
+   
+  }
+
+  .mega-menu .product-title{
+    text-decoration:underline;
+  }
+  .mega-menu a {
+    padding:0;
+    color:#fff;
+  }
+  
+  .no-mega-menu{
+    transform: translate3d(0px, 120px, 0px) !important;
+  }
+  .sticky-mega-menu{
+    transform: translate3d(0px, 120px, 0px) !important;
+  }
+  .mega-menu-content{
+    padding:15px;
+  }
+  #footer{
+    background: rgba(71,227,255);
+  }
+  #footer .footer-top {
+    padding: 40px 0 30px 0 !important;
+    background: rgb(71,227,255);
+  }
+
+  #footer .copyright {
+    color: #009ebb;
+  }
+
+
+  #header {
+    height: 120px;
+    z-index: 997;
+  }
+  #header .logo img {
+  /* padding: 0;
+  margin: 0; */
+  max-height: 80px;
+  }
+  #topbar{
+    background-color:transparent !important;
+    border-bottom: 0;
+  }
+  .hatdog{
+    background-color:transparent !important;
+  }
+ 
+  .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .nav-menu a {
+
+    color: #b5c6d6 !important;
+
+
+
+  }
+  #topbar .social-links a {
+   color: #b5c6d6 !important;
+  } 
+  .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  color: #ffffff !important;
+
+  }
+
+  .hardware-desc{
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+
+.distrib{
+  display:none;
+}
+
+ .fcover{
+
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 370px !important;
+   
+  }
+  .mob-menu{
+    display:none;
+  }
+  .def-menu{
+    display:block;
+  }
+
+  .digimarine-header{
+    position:absolute !important;
+    z-index:9999
+  }
+
+  .mobile-nav-toggle {
+    position: absolute !important;
+    cursor: pointer !important;
+    top: 5px !important;
+  }
+
+  .mobile-nav-toggle i {
+    color: #333 !important;
+}
+@media only screen and (max-width: 1440px) {
+  .hardware-desc{
+   position:fixed;
+   left: 25%;
+  }
+
+  .hardware-hr{
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .distrib{
+    display:block;
+  }
+  .mob-menu{
+    display:block;
+  }
+  .def-menu{
+    display:none;
+  }
+  .fcover{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height:100% !important;
+    background-position: center !important;
+  }
+
+   .digimarine-header{
+    position:absolute !important;
+    z-index:9999 !important;
+    width:250px !important;
+    left:-10px !important;
+  }
+
+  .digimarine-header .logo img{
+    height:60px !important;
+  }
+}

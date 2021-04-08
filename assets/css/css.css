@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma');
+
+body{
+    background-color:#000 !important;
+    font-family: 'Michroma', sans-serif;
+     font:#FFF !important;
+}
+
+iframe {
+    width   : 100%;
+}
+
+.navbar-brand {
+    max-width: 350px;
+    height: 70px;
+}
+
+.navbar-brand img {
+    height: 100%;
+    width: auto;
+}
+
+.banner_header iframe {
+    display: block;
+    margin: auto;
+}
+
+.banner_header h1 {
+    text-align: center;
+    margin-top: 60px;
+    display: block;
+    margin-bottom: 60px;
+    font-size: 26px;
+}
+
+.bd_section {
+   /* border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.bd_section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.navbar-toggle {
+    margin-top  : 20px;
+}
+
+.bd_section h4 {
+    font-size   : 15px;
+}
+
+#featured-vid iframe {
+    display: block;
+    margin: auto;
+}
+
+.btn-subscribe {
+    color: white !important;
+    padding: 5px 15px !important;
+    display: inline-block;
+    /* float       : right; */
+    margin-top: 10px;
+}
+
+#programmes .col-xs-4,
+.list_item .col-xs-4 {
+    margin-bottom: 30px;
+    color: orangered !important;
+}
+
+#programmes h3 {
+    color: orangered;
+}
+
+.btn-learmore {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+.sidenav {
+    position: fixed;
+    border-right: 1px solid lightgray;
+    height: 30vh;
+    padding-right: 15px;
+    top     : 100px;
+}
+
+.sidenav a {
+    color: gray;
+}
+
+.side_active {
+    background-color: orangered;
+    color: white !important;
+}
+
+#contact .input-group {
+    margin-bottom: 30px;
+}
+
+#contact .input-group button {
+    margin-top: 30px;
+}
+
+.navbar-nav {
+    display: inline-block;
+    float: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 13px;
+}
+
+.navbar {
+    display: block;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-nav > li > a {
+    font-size   : small;
+}
+
+.footer {
+    background-color: #333;
+    padding: 0 30px;
+    margin-top: 60px;
+}
+
+.footer .barLine {
+    background-color: hsla(0, 0%, 100%, .33);
+    height: 10px;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.footer .topFooter {
+    padding-top: 30px;
+}
+
+.footer .topFooter .footerLogo {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+ .logo {
+        width:50%;
+        height:100%;
+
+    }
+@media (min-width:768px) {
+   
+    .footer .topFooter .footerLogo {
+        float: left;
+    }
+
+    .logo {
+        width:50%;
+        height:100%;
+        z-index: -100;
+        
+    }
+}
+
+.footer .topFooter .footerLogo img {
+    display: block;
+    margin: auto;
+}
+
+.footer .topFooter .socialMedia {
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+@media (min-width:768px) {
+    .footer .topFooter .socialMedia {
+        float: right;
+    }
+}
+
+.footer .topFooter .socialMedia ul {
+    list-style: none;
+    padding-left: none;
+}
+
+.footer .topFooter .socialMedia ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.footer .topFooter .socialMedia ul li a {
+    color: inherit;
+}
+
+.footer .topFooter .socialMedia ul li a:hover {
+    color: #cb6a17;
+}
+
+.footer .bottomFooter {
+    padding-bottom: 30px;
+}
+
+.footer .bottomFooter .footerNavMenu {
+    list-style: none;
+    padding-left: 0;
+    font-size: 15px;
+}
+
+.footer .bottomFooter .footerNavMenu li {
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-family: inherit;
+}
+
+@media (min-width:768px) {
+    .footer .bottomFooter .footerNavMenu li {
+        display: inline-block;
+        text-align: left;
+        margin-left: 30px;
+        font-family: inherit;
+    }
+}
+
+.footer .bottomFooter .footerNavMenu li a {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+.footer .backtoTop {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #333;
+    display: none;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+}
+
+.footer .backtoTop .fa {
+    display: block;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 40px;
+}
+
+@media (max-width   : 736px) {
+    .sidenav {
+        position    : initial;
+    }
+  
+}
+
+@media (max-width   : 468px) {
+    .sidenav {
+        position    : initial;
+    }
+    .logo {
+        width:100%;
+        height:100%;
+        z-index: -100;
+        
+    }
+}
